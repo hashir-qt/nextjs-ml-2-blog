@@ -10,10 +10,4 @@ const nextConfig = {
         }
         ]
 }};
-module.exports = {
-    eslint: {
-      dirs: ["pages", "components", "lib", "utils"], // Specify directories to lint
-    },
-  };
 
-export default nextConfig;
