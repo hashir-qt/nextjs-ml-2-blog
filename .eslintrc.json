@@ -1,6 +1,24 @@
 {
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2020,  // Use the appropriate ECMAScript version
-    "sourceType": "module"  // Ensure ESLint knows it's a module
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "next",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-console": "warn"
   }
 }
