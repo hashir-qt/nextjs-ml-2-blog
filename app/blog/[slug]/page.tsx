@@ -35,7 +35,7 @@ export default async function BlogArticle({params}: {params:{slug: string}}) {
       </h1>
       <div className="flex flex-col items-center">
       <Image
-        src={urlFor(data.titleImage).url()}
+         src={urlFor(data.titleImage).url()}
         width={800}
         height={800}
         alt="Title Image"
