@@ -50,7 +50,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold">Stay Updated</h3>
             <p className="text-sm text-muted-foreground">Get the latest crypto news and analysis delivered straight to your inbox.</p>
             <Link href="/newsletter">
-              <Button className="w-full">
+              <Button className="w-full mt-5">
                 Subscribe to Our Newsletter
               </Button>
             </Link>
